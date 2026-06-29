@@ -6,8 +6,8 @@
 <div align="center">
   
 
-  <h2 align="center">luxmind-api</h2>
-  <h5 align="center">Alpha Retina - WebAPI</h5>
+  <h2 align="center">Luxmind-api</h2>
+  
 
   
 </div>
