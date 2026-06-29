@@ -1,6 +1,5 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
-[![Closed License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
