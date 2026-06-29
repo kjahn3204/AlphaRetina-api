@@ -9,18 +9,7 @@
   <h2 align="center">luxmind-api</h2>
   <h5 align="center">Alpha Retina - WebAPI</h5>
 
-  <p align="center">
-    Make Anything, Serve Anything 😋
-    <br />
-    <a href="https://github.com/luxmind-ai/api"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/luxmind-ai/api">View Demo</a>
-    ·
-    <a href="https://github.com/luxmind-ai/api">Report Bug</a>
-    ·
-    <a href="https://github.com/luxmind-ai/api">Request Feature</a>
-  </p>
+  
 </div>
 
 <!-- TABLE OF CONTENTS -->
