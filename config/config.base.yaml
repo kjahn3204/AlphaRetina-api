@@ -1,0 +1,35 @@
+api:
+  log:
+    excludeLogUrls:
+      - /health
+      - /network
+      - /reports
+  mount:
+    static: '{{work_dir}}/static'
+    data: '/image_data'
+app:
+  filter:
+    timeUnit: month
+    maxPeriod: 12
+  analytics:
+    ignore:
+      roles:
+        - ADM
+        - DEV
+        - TEST
+      ids:
+        - bigstring@knenergy.co.kr
+        - dhpark@knenergy.co.kr
+        - jwyoon@knenergy.co.kr
+        - hjshin@knenergy.co.kr
+        - kiwoongkim@knenergy.co.kr
+        - kuyongmo@knenergy.co.kr
+ai:
+  segment_model:
+    model_path: '/ai/seg_model.onnx'
+    num_threads: 16
+  category_model:
+    model_path: '/ai/cat_model.onnx'
+    in_channels: 19  # 세그멘테이션 클래스 수
+    num_classes: 4  # 카테고리 수 (O, R, S, U)
+    learning_rate: 1e-4

@@ -1,0 +1,25 @@
+api:
+  auth:
+    alwaysAllowUrls:
+    - /
+    - /signin
+    - /status
+    - /docs
+    - /favicon.ico
+    - /openapi.json
+    - /static
+    - /version
+    - /changelog
+    - /health
+    - /admin/users
+    - /data
+app:
+  db:
+    rdb:
+      kind: mysql
+      userId: root
+      password: raon0101!
+      host: luxmind.link
+      port: 9000
+      database: luxmind
+

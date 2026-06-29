@@ -1,0 +1,35 @@
+api:
+  auth:
+    alwaysAllowUrls:
+    - /
+    - /signin
+    - /status
+    - /docs
+    - /favicon.ico
+    - /openapi.json
+    - /static
+    - /version
+    - /changelog
+    - /health
+    - /admin/users
+    - /data/**
+
+app:
+  db:
+    rdb:
+      kind: mysql
+      userId: root
+      password: 8278
+      host: alpha_retina_db
+      port: 3306
+      database: luxmind
+
+ai:
+  segment_model:
+    model_path: '/ai/seg_model.onnx'
+    num_threads: 16
+  category_model:
+    model_path: '/ai/cat_model.onnx' 
+    in_channels: 19  # 세그멘테이션 클래스 수
+    num_classes: 4  # 카테고리 수 (O, R, S, U)
+    learning_rate: 1e-4
