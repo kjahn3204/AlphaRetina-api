@@ -210,7 +210,6 @@ Distributed under the Closed-source License. See [`LICENSE.txt`](./LICENSE.txt) 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
