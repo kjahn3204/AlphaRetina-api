@@ -1,0 +1,38 @@
+# Dockerfile.base
+
+FROM python:3.11-slim
+
+# 환경 변수 설정
+ENV TZ=Asia/Seoul
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
+# 필수 패키지 설치
+RUN export DEBIAN_FRONTEND=noninteractive \
+ && apt-get -yq update \
+ && apt-get -yq install --no-install-recommends \
+    ca-certificates \
+    gpg-agent \
+    locales \
+    tzdata \
+ && apt-get clean autoclean \
+ && apt-get autoremove -y \
+ && rm -rf /var/lib/apt/lists/* \
+ && echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen \
+ && ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
+
+RUN apt-get update && apt-get install -y libgl1
+RUN apt-get update && apt-get install -y libglib2.0-0
+
+# 작업 디렉토리 설정
+WORKDIR /root/kevas-api
+
+# requirements 파일 및 rcore 패키지 복사 및 설치
+COPY ./requirements/prod.txt ./requirements.txt
+COPY ./rcore-0.2.1-py3-none-any.whl ./rcore-0.2.1-py3-none-any.whl
+RUN pip install ./rcore-0.2.1-py3-none-any.whl \
+ && pip install -r requirements.txt
+
+# ex) 더 추가로 설치할 패키지가 있다면 여기에 추가
+# RUN pip install <package_name>
