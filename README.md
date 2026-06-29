@@ -5,9 +5,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/raondata/kevas-api">
-    <img src='static/img/logo.svg' width="36" alt="raon_logo"/>
-  </a>
+  
 
   <h2 align="center">luxmind-api</h2>
   <h5 align="center">Alpha Retina - WebAPI</h5>
@@ -233,8 +231,7 @@ Distributed under the Closed-source License. See [`LICENSE.txt`](./LICENSE.txt) 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-### Contribution
-- Deoghyun Ga (gadeoghyeon@raondata.ai)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,7 +246,6 @@ Distributed under the Closed-source License. See [`LICENSE.txt`](./LICENSE.txt) 
 [issues-shield]: https://img.shields.io/badge/issues-1-green?style=for-the-badge
 [issues-url]: https://github.com/luxmind-ai/api/issues
 [license-shield]: https://img.shields.io/badge/license-closed-red?style=for-the-badge
-[license-url]: https://github.com/raondata/kevas-api//blob/master/LICENSE.txt
 [FastAPI]: https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
 [FastAPI-url]: https://fastapi.tiangolo.com/ko/
 [Ubuntu-link]: https://releases.ubuntu.com/jammy/
